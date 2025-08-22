@@ -29,5 +29,11 @@ namespace SimpleAPI.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("Teste")]
+        public string GetSaudacoes()
+        {
+            return $"{DateTime.Now.ToShortTimeString()} - Bem vindo à MinhaAPI";
+        }
     }
 }
